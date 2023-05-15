@@ -106,8 +106,10 @@ public class Delivery {
         */
 
         // /** Example 2:  finding and process
+
+        orderCancelled.getId();
     
-        repository().findByOrderId(orderCancelled.getId()).ifPresent(delivery->{
+        repository().findByOrderId(orderCancelled. ).ifPresent(delivery->{
             
             delivery.setStatus("Order Cancel Done"); // do something
             repository().save(delivery);
