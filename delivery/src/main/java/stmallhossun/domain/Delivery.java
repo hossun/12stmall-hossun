@@ -78,22 +78,6 @@ public class Delivery {
 
         DeliveryStated deliveryStated = new DeliveryStated(delivery);
         deliveryStated.publishAfterCommit();
-        
-
-        /** Example 2:  finding and process
-        
-        repository().findById(orderPlaced.getId()).ifPresent(delivery->{
-            
-            delivery // do something
-            dele
-            repository().save(delivery);
-
-            DeliveryStated deliveryStated = new DeliveryStated(delivery);
-            deliveryStated.publishAfterCommit();
-
-         });
-        #/
-
     }
 
     public static void cencelDelivery(OrderCancelled orderCancelled) {
@@ -109,7 +93,7 @@ public class Delivery {
 
         orderCancelled.getId();
     
-        repository().findByOrderId(orderCancelled. ).ifPresent(delivery->{
+        repository().findByOrderId(orderCancelled.getId()).ifPresent(delivery->{
             
             delivery.setStatus("Order Cancel Done"); // do something
             repository().save(delivery);
