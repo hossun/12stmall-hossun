@@ -16,3 +16,9 @@ sudo mv /tmp/eksctl /usr/local/bin
 cd kafka
 docker container rm kafka-kafka-1 kafka-zookeeper-1
 docker-compose up
+
+source <(kubectl completion bash) # bash-completion
+echo "source <(kubectl completion bash)" >> ~/.bashrc
+
+alias k=kubectl
+complete -o default -F __start_kubectl k

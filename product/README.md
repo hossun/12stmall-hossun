@@ -10,8 +10,8 @@ mvn spring-boot:run
 
 ```
 mvn package -B -DskipTests
-docker build -t username/product:v1 .
-docker run username/product:v1
+docker build -t hossun/product:v1.0 .
+docker run hossun/product:v1.0
 ```
 
 ## Push images and running in Kubernetes
@@ -20,7 +20,7 @@ docker run username/product:v1
 docker login 
 # in case of docker hub, enter your username and password
 
-docker push username/product:v1
+docker push hossun/product:v1.0
 ```
 
 Edit the deployment.yaml under the /kubernetes directory:
