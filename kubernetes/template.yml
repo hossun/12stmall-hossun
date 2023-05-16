@@ -18,7 +18,7 @@ spec:
     spec:
       containers:
         - name: order
-          image: username/order:latest
+          image: hossun/order:v1.0
           ports:
             - containerPort: 8080
           readinessProbe:
@@ -58,7 +58,7 @@ spec:
     spec:
       containers:
         - name: delivery
-          image: username/delivery:latest
+          image: hossun/delivery:v1.0
           ports:
             - containerPort: 8080
           readinessProbe:
@@ -98,7 +98,7 @@ spec:
     spec:
       containers:
         - name: product
-          image: username/product:latest
+          image: hossun/product:v1.0
           ports:
             - containerPort: 8080
           readinessProbe:
@@ -138,7 +138,7 @@ spec:
     spec:
       containers:
         - name: customercenter
-          image: username/customercenter:latest
+          image: hossun/customercenter:v1.0
           ports:
             - containerPort: 8080
           readinessProbe:

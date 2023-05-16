@@ -13,7 +13,7 @@ mvn package -B -DskipTests
 docker build -t hossun/order:v1.0 .
 docker run hossun/order:v1.0
 ```
-
+docker build -t hossun/gateway:v1.0 .
 ## Push images and running in Kubernetes
 
 ```
